@@ -12,7 +12,7 @@
       box-sizing: border-box;
     }
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       line-height: 1.6;
       background: #f4f4f4;
       color: #333;
@@ -48,8 +48,8 @@
     }
     /* Hero section */
     .hero {
-      /* تم تعديل رابط الخلفية ليصبح رابط مباشر للصورة الأولى */
-      background: url('https://raw.githubusercontent.com/aboaymn/SPYXFUN/44271ca46348b039f8d1d3091bbd1c11fed781de/l%20%281%29.jpeg') no-repeat center center/cover;
+      /* استخدام الرابط المباشر كخلفية وتحديد background-size بشكل صحيح */
+      background: url('https://raw.githubusercontent.com/aboaymn/SPYXFUN/679c827a956fc23576fbfa568fcaf60ae63a2ba7/%D9%A2%D9%A0%D9%A2%D9%A5%D9%A0%D9%A6%D9%A1%D9%A3_%D9%A0%D9%A2%D9%A5%D9%A3%D9%A4%D9%A8.png') no-repeat center center / cover;
       position: relative;
       height: 100vh;
       display: flex;
@@ -60,174 +60,8 @@
     }
     .hero-overlay {
       position: absolute;
-      width: 100%;
-      height: 100%;
       top: 0;
       left: 0;
-      background: rgba(0,0,0,0.5);
-    }
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-      color: #fff;
-      padding: 0 20px;
-    }
-    .hero-content h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-    }
-    /* Penguin card as an interactive element */
-    .penguin-card {
-      margin: 40px auto;
-      max-width: 600px;
-      background: #fff;
-      border-radius: 8px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 20px;
-    }
-    .penguin-card img {
-      max-width: 200px;
-      transition: transform 0.3s ease;
-    }
-    .penguin-card img:hover {
-      transform: scale(1.1);
-    }
-    /* Other sections of the website */
-    section {
-      padding: 80px 0 40px;
-    }
-    section:nth-of-type(even) {
-      background: #fff;
-    }
-    section:nth-of-type(odd) {
-      background: #eee;
-    }
-    h2.section-title {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #333;
-    }
-    p {
-      margin: 10px 0;
-      text-align: center;
-      padding: 0 20px;
-    }
-    /* Social media link buttons */
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .social-links a {
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-      padding: 10px 20px;
-      border-radius: 5px;
-      color: #fff;
-    }
-    .twitter {
-      background: #1DA1F2;
-    }
-    .telegram {
-      background: #0088cc;
-    }
-    .instagram {
-      background: #E4405F;
-    }
-    /* Website footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #333;
-      color: #fff;
-    }
-    /* Responsive design for small screens */
-    @media (max-width: 768px) {
-      nav ul {
-        flex-direction: column;
-      }
-    }
-  </style>
-</head>
-<body>
-  <!-- Website header and navigation menu -->
-  <header>
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About SPYX</a></li>
-          <li><a href="#community">Community</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero section -->
-  <section id="hero" class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>SPYX</h1>
-      <p>Where fun meets the passion for memes.</p>
-      <div class="penguin-card">
-        <!-- الرابط للصورة الثانية يبقى كما هو السابق -->
-        <a href="https://raw.githubusercontent.com/aboaymn/SPYXFUN/8e9463ba70368e0be1cd78326e94628e6e7609bc/1749770709898.png" target="_blank">
-          <img src="https://via.placeholder.com/200x200.png?text=Penguin+with+Sunglasses" alt="SPYX Penguin wearing sunglasses">
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- About the project -->
-  <section id="about">
-    <div class="container">
-      <h2 class="section-title">About SPYX</h2>
-      <p>
-        In the depths of the digital network, <strong>Spyx</strong> silently watched, protecting the SPYX system from lurking threats. One night, he detected an attempted breach and swiftly moved through the codes, tracking the intruder.  
-        <br><br>
-        With a swift maneuver, he reversed the attack, trapping the infiltrator inside an inescapable sequence of code. In a moment of triumph, the system regained its stability, and the attacker vanished without a trace.  
-        <br><br>
-        As for Spyx, he remained in the shadows, always ready to safeguard the SPYX community from any new danger 🕶️🐧
-      </p>
-    </div>
-  </section>
-
-  <!-- Community and social links -->
-  <section id="community">
-    <div class="container">
-      <h2 class="section-title">Community and Social</h2>
-      <p>
-        Join our active community, interact with crypto enthusiasts, and follow us on social media to stay updated.
-      </p>
-      <div class="social-links">
-        <a href="https://twitter.com/YourTwitterHandle" class="twitter" target="_blank">Twitter</a>
-        <a href="https://t.me/YourTelegramHandle" class="telegram" target="_blank">Telegram</a>
-        <a href="https://instagram.com/YourInstagramHandle" class="instagram" target="_blank">Instagram</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Website footer -->
-  <footer>
-    <div class="container">
-      <p>All rights reserved © SPYX 2025</p>
-    </div>
-  </footer>
-
-  <!-- Smooth scrolling script -->
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
-</body>
-          </html>
+      width: 100%;
+      height: 100%;
+      background
